@@ -27,8 +27,22 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 500, height: 400)
 
-// Replace this comment and add your code below 
+canvas.drawShapesWithFill = false
 
+canvas.drawEllipse(centreX: 115, centreY: 115, width: 150, height: 150)
+
+
+canvas.drawRoundedRectangle(centreX: 300, centreY: 175, width: 125, height: 125)
+
+
+var points : [NSPoint] = []
+points.append(NSPoint(x: 400, y: 100))
+points.append(NSPoint(x: 475, y: 300))
+points.append(NSPoint(x: 325, y: 300))
+
+canvas.drawCustomShape(with: points)
+
+canvas.drawRectangle(bottomLeftX: 150, bottomLeftY: 15, width: 125, height: 350)
 
 /*:
  ## Template code
